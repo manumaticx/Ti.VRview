@@ -83,13 +83,20 @@ public class VRviewProxy extends TiViewProxy {
 		}
 	}
 
-	// Methods
 	@Kroll.method
-	public void start() {
+	public void loadVideoFromRessourceFolder(String uri, KrollDict opts) {
 	}
 
 	@Kroll.method
-	public void stop() {
+	public void loadVideo(String uri, KrollDict opts) {
+	}
+
+	@Kroll.method
+	public void playVideo() {
+	}
+
+	@Kroll.method
+	public void pauseVideo() {
 	}
 
 	@Kroll.getProperty
