@@ -10,56 +10,49 @@ package de.appwerft.vrview;
 
 import org.appcelerator.kroll.KrollModule;
 import org.appcelerator.kroll.annotations.Kroll;
-
 import org.appcelerator.titanium.TiApplication;
 import org.appcelerator.kroll.common.Log;
 import org.appcelerator.kroll.common.TiConfig;
 
+import com.google.vr.sdk.widgets.video.VrVideoView;
 
-@Kroll.module(name="Vrview", id="de.appwerft.vrview")
-public class VrviewModule extends KrollModule
-{
+@Kroll.module(name = "Vrview", id = "de.appwerft.vrview")
+public class VrviewModule extends KrollModule {
+	// Indicates that the video is in a standard video container format such as
+	// mp4, webm, ogg, aac.
+	final static int FORMAT_DEFAULT = VrVideoView.Options.FORMAT_DEFAULT;
+	// Indicates that the video uses the HTTP Live Streaming (HLS) format.
+	final static int FORMAT_HLS = VrVideoView.Options.FORMAT_HLS;
+	// Each video frame is a monocular equirectangular panorama.
+	final static int TYPE_MONO = VrVideoView.Options.TYPE_MONO;
+	// Each video frame contains two vertically-stacked equirectangular
+	// panoramas.
+	final static int TYPE_STEREO_OVER_UNDER = VrVideoView.Options.TYPE_STEREO_OVER_UNDER;
 
-	// Standard Debugging variables
-	private static final String LCAT = "VrviewModule";
-	private static final boolean DBG = TiConfig.LOGD;
-
-	// You can define constants with @Kroll.constant, for example:
-	// @Kroll.constant public static final String EXTERNAL_NAME = value;
-
-	public VrviewModule()
-	{
+	public VrviewModule() {
 		super();
 	}
 
 	@Kroll.onAppCreate
-	public static void onAppCreate(TiApplication app)
-	{
-		Log.d(LCAT, "inside onAppCreate");
-		// put module init code that needs to run when the application is created
+	public static void onAppCreate(TiApplication app) {
+		// put module init code that needs to run when the application is
+		// created
 	}
 
 	// Methods
 	@Kroll.method
-	public String example()
-	{
-		Log.d(LCAT, "example called");
+	public String example() {
 		return "hello world";
 	}
 
 	// Properties
 	@Kroll.getProperty
-	public String getExampleProp()
-	{
-		Log.d(LCAT, "get example property");
+	public String getExampleProp() {
 		return "hello world";
 	}
 
-
 	@Kroll.setProperty
 	public void setExampleProp(String value) {
-		Log.d(LCAT, "set example property: " + value);
 	}
 
 }
-
