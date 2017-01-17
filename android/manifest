@@ -1,0 +1,18 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 0.0.1
+apiversion: 3
+architectures: armeabi-v7a x86
+description: vrview
+author: Rainer Knöterich
+license: Specify your license
+copyright: Copyright (c) 2017 by 
+
+# these should not be edited
+name: vrview
+moduleid: de.appwerft.vrview
+guid: 56b2280b-4c28-4320-abe5-a89ccd1c6682
+platform: android
+minsdk: 6.0.1.GA
