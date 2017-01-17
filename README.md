@@ -21,3 +21,11 @@ win.add(vrView);
 ```
 
 Don't forget to restrict the screenorientation to "landscape"!
+```xml
+<activity 
+	android:name="org.appcelerator.titanium.TiActivity" 
+	android:screenOrientation="landscape" 
+	android:configChanges="keyboardHidden|screenSize"
+/>
+		
+```
