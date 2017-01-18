@@ -12,11 +12,12 @@ var VR = require("de.appwerft.vrview");
 var win = Ti.UI.createWindow({
 	theme : "Theme.AppCompat.NoTitleBar.Fullscreen"
 });
-var vrView = VR.createVRview({
-	video : "/congo.mp4",
+var vrView = VR.createVrVideoView({
 	autostart : true,
 	isStereo : true
 });
+vrView.loadVideo("http://tools.webmasterei.com/vrview/VRtest.mp4");
+vrView.playVideo();
 win.add(vrView);
 ```
 
