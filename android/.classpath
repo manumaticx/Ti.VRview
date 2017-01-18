@@ -7,5 +7,11 @@
 	<classpathentry kind="lib" path="/Users/manuel/Library/Application Support/Titanium/mobilesdk/osx/6.0.1.GA/android/titanium.jar"/>
 	<classpathentry kind="lib" path="/Users/manuel/Library/Application Support/Titanium/mobilesdk/osx/6.0.1.GA/android/kroll-common.jar"/>
 	<classpathentry kind="lib" path="/Users/manuel/Library/Application Support/Titanium/mobilesdk/osx/6.0.1.GA/android/kroll-apt.jar"/>
+	<classpathentry kind="lib" path="lib/sdk-controller-1.0.0.jar"/>
+    <classpathentry kind="lib" path="lib/sdk-common-1.0.0.jar"/>
+    <classpathentry kind="lib" path="lib/sdk-videowidget-1.0.0.jar"/>
+    <classpathentry kind="lib" path="lib/sdk-base-1.0.0.jar"/>
+    <classpathentry kind="lib" path="lib/sdk-panowidget-1.0.0.jar"/>
+    <classpathentry kind="lib" path="lib/sdk-audio-1.0.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
